@@ -1,0 +1,13 @@
+#Timer{
+    margin-left: 50%;
+}
+
+.center {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#HighScore, #Timer
+{
+    display:inline;
+}
