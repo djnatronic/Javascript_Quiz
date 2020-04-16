@@ -6,6 +6,8 @@ var secondsLeft = 200;
 var questionNumber = 0
 var answerKey = [3,2,4,3,4]
 var numberOfTimes = 0
+var correctTimes = 0
+var incorrectTimes = 0
 
 const questionsAnswers = [
     {Question: "Commonly used Data types DO NOT include:",
@@ -52,7 +54,23 @@ headerEl.textContent = "Test Test Test"
 
 
 
+function HighScores(){
+ 
+    // do your thing, do your thing
 
+  button2.style.display = "none";
+  button3.style.display = "none";
+  button4.style.display = "none";
+  button5.style.display = "none";
+  headerEl.textContent = "High Scores";
+  textEl.textContent = "Did you get the highest score?";
+  button1.textContent = "Start Quiz"
+  questionNumber
+  document.getElementById('button1').setAttribute('onclick',StartQuiz())
+  
+
+  
+}
 
 
 
@@ -85,19 +103,23 @@ function RunQuiz() {
       var correctAnswer = (answerKey[numberOfTimes])
       if(x == correctAnswer){
         console.log("correct answer to question: " + numberOfTimes)
+        correctTimes++
         numberOfTimes++
         questionNumber++
         if(secondsLeft == 0 || secondsLeft < 0 || questionNumber == 6){
           console.log("the end exam if statement worked!")
+          HighScores()
         }
       }
       else{
         console.log("incorrect answer to question: " + numberOfTimes)
+        incorrectTimes++
         numberOfTimes++
         questionNumber++
         secondsLeft = secondsLeft - 20
         if(secondsLeft == 0 || secondsLeft < 0 || questionNumber == 6){
           console.log("the end exam if statement worked!")
+          HighScores()
         }
       }
      
