@@ -9,7 +9,7 @@ This is a simple quiz that is almost complete, I need to finish the highschore a
 HTML<br/>
 Plain JavaScript<br/>
 
-![scheduler demo](./Intro.png)
+![scheduler demo](./Intro.PNG)
 
 ![scheduler demo](./Question.PNG)
 
