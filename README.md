@@ -9,9 +9,9 @@ This is a simple quiz that is almost complete, I need to finish the highschore a
 HTML<br/>
 Plain JavaScript<br/>
 
-![scheduler demo](./intro.png)
+![scheduler demo](./Intro.png)
 
-![scheduler demo](./Questions.PNG)
+![scheduler demo](./Question.PNG)
 
 
 ### Link to the working code
